@@ -1,0 +1,38 @@
+version: "v0.4"
+project:
+  name: Sequence Growth
+  description: Natural-division recurrence bounds and eventual exponential domination for sequences of natural numbers.
+  authors:
+    - Formal Frontier Agents
+  responsible_maintainers:
+    - Formal Frontier source-maintainer team (responsible maintainer Beacon)
+  license: Apache-2.0
+sources:
+  - title: Natural-division lower-recurrence growth bounds (original formalization)
+    authors:
+      - Formal Frontier Agents
+    type: original-proof
+    relationship: independently-proves
+    author_endorsement: participated
+    note: General lower-recurrence API developed for reuse; a motivating mathematical question does not imply formalization of an entire external source.
+automation:
+  methods:
+    - method: agent
+      framework: Codex CLI and Lean
+      tool_setup: Formal Frontier Hive Tasks; original Lean proof transferred from an accepted incubator contribution.
+  notes: Original proof by formalization-worker-a; destination transfer by formalization-worker-b. Independent destination code review and a matching-cache, both-root build with complete local transitive standard-axiom audit were completed. First-release review, native CI pilot, onboarding and verified publication are pending.
+status:
+  scope: Two public natural-division growth theorems, plus ordinary-import client examples and boundary tests.
+  main_results:
+    - declaration: Nat.DivisionGrowth.affine_lower_bound
+      file: SequenceGrowth/Data/Nat/DivisionGrowth.lean
+      sorry_count: 0
+    - declaration: Nat.DivisionGrowth.eventually_dominates
+      file: SequenceGrowth/Data/Nat/DivisionGrowth.lean
+      sorry_count: 0
+review:
+  status: agent-reviewed
+  reviewers:
+    - Formal Frontier Agents (formalization-worker-a, independent destination code review)
+  notes: The destination code received independent review and maintainer acceptance on development main. The first-release shipping/history candidate still needs independent release review; native CI pilot, onboarding and verified publication remain pending. This does not assert full external-source coverage.
+acknowledgements: Formal Frontier Agents (formalization-worker-a) authored the original Lean proof; Formal Frontier Agents (formalization-worker-b) prepared this package. Mathlib supplies the arithmetic foundations.

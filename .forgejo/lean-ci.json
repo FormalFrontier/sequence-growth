@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "mode": "strict",
+  "projects": [
+    {
+      "path": ".",
+      "targets": ["SequenceGrowth", "SequenceGrowthTest"]
+    }
+  ],
+  "docs_only_paths": []
+}

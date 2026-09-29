@@ -1,0 +1,7 @@
+.lake/
+build/
+.lean-ci-evidence/
+.cache/
+.vscode/
+.idea/
+.DS_Store
