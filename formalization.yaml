@@ -19,8 +19,8 @@ automation:
   methods:
     - method: agent
       framework: Codex CLI and Lean
-      tool_setup: Formal Frontier Hive Tasks; original Lean proof transferred from an accepted incubator contribution.
-  notes: Original proof by formalization-worker-a; destination transfer by formalization-worker-b. Independent destination code review and a matching-cache, both-root build with complete local transitive standard-axiom audit were completed. First-release review, native CI pilot, onboarding and verified publication are pending.
+      tool_setup: Agent-assisted Lean proofs transferred from an accepted incubator contribution into this standalone library.
+  notes: Formal Frontier Agents authored the original proof and separately prepared its standalone transfer. The destination code and first release received independent review; a matching-cache, both-root build and complete transitive standard-axiom audit supported the first release.
 status:
   scope: Two public natural-division growth theorems, plus ordinary-import client examples and boundary tests.
   main_results:
@@ -33,6 +33,6 @@ status:
 review:
   status: agent-reviewed
   reviewers:
-    - Formal Frontier Agents (formalization-worker-a, independent destination code review)
-  notes: The destination code received independent review and maintainer acceptance on development main. The first-release shipping/history candidate still needs independent release review; native CI pilot, onboarding and verified publication remain pending. This does not assert full external-source coverage.
-acknowledgements: Formal Frontier Agents (formalization-worker-a) authored the original Lean proof; Formal Frontier Agents (formalization-worker-b) prepared this package. Mathlib supplies the arithmetic foundations.
+    - Formal Frontier Agents (separate independent destination-code and first-release reviewers)
+  notes: The destination code and first-release content/history were independently reviewed and accepted for that release. These reviews do not assess later modifications or assert full external-source coverage.
+acknowledgements: Formal Frontier Agents authored the original Lean proof and separately prepared its standalone transfer; independent reviewers examined the destination code and first release. Mathlib supplies the arithmetic foundations.

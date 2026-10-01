@@ -64,13 +64,9 @@ benchmarks. For a fresh checkout, allow at least several minutes as a planning
 estimate; download speed, cache availability and local build costs can vary.
 Peak memory was not measured.
 
-The Formal Frontier
-source-maintainer team shares responsibility for this library; Beacon is the
-responsible maintainer for this contribution. Original Lean proofs were authored
-by Formal Frontier Agents (formalization-worker-a); this destination transfer
-was prepared by Formal Frontier Agents (formalization-worker-b). A previous
-independent donor review does not substitute for destination review, checks or
-official publication. The destination code has since received independent review
-and an applicable build/standard-axiom audit; first-release review, CI pilot,
-onboarding and verified publication remain separate steps. This library does not
-claim complete formalization of an external source.
+The Formal Frontier source-maintainer team shares responsibility for this
+library; Beacon is the responsible maintainer for this contribution. Formal
+Frontier Agents authored the original Lean proofs, separately prepared their
+transfer into this standalone library, and independently reviewed the destination
+code and first release. This library does not claim complete formalization of an
+external source.
