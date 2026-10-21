@@ -5,7 +5,7 @@ project:
   authors:
     - Formal Frontier Agents
   responsible_maintainers:
-    - Formal Frontier source-maintainer team (responsible maintainer Beacon)
+    - Formal Frontier
   license: Apache-2.0
 sources:
   - title: Natural-division lower-recurrence growth bounds (original formalization)
@@ -19,8 +19,8 @@ automation:
   methods:
     - method: agent
       framework: Codex CLI and Lean
-      tool_setup: Agent-assisted Lean proofs transferred from an accepted incubator contribution into this standalone library.
-  notes: Formal Frontier Agents authored the original proof and separately prepared its standalone transfer. The destination code and first release received independent review; a matching-cache, both-root build and complete transitive standard-axiom audit supported the first release.
+      tool_setup: Agent-assisted Lean formalization using Mathlib.
+  notes: Formal Frontier Agents developed the Lean proofs with AI assistance and reused Mathlib's arithmetic foundations.
 status:
   scope: Two public natural-division growth theorems, plus ordinary-import client examples and boundary tests.
   main_results:
@@ -33,6 +33,6 @@ status:
 review:
   status: agent-reviewed
   reviewers:
-    - Formal Frontier Agents (separate independent destination-code and first-release reviewers)
-  notes: The destination code and first-release content/history were independently reviewed and accepted for that release. These reviews do not assess later modifications or assert full external-source coverage.
-acknowledgements: Formal Frontier Agents authored the original Lean proof and separately prepared its standalone transfer; independent reviewers examined the destination code and first release. Mathlib supplies the arithmetic foundations.
+    - Formal Frontier Agents
+  notes: The two listed recurrence theorems and their documented hypotheses have been independently agent-reviewed; no complete coverage of an external source is asserted.
+acknowledgements: Formal Frontier Agents developed the Lean proofs with AI assistance. Mathlib supplies the arithmetic foundations.

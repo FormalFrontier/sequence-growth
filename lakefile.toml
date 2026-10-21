@@ -1,6 +1,13 @@
 name = "sequence-growth"
 version = "0.1.0"
+lintDriver = "batteries/runLinter"
 defaultTargets = ["SequenceGrowth", "SequenceGrowthTest"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+weak.linter.style.header = false
 
 [[require]]
 name = "mathlib"

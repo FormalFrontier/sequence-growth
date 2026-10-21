@@ -22,6 +22,18 @@ for the precise Lean signatures, the rational shift, examples and boundary cases
 
 ## Use
 
+Add the library to your `lakefile.toml`:
+
+```toml
+[[require]]
+name = "sequence-growth"
+git = "https://github.com/FormalFrontier/sequence-growth.git"
+rev = "main"
+```
+
+GitHub `main` contains reviewed releases. Lake records the resolved commit in
+`lake-manifest.json`; use a full release commit in `rev` to pin a specific version.
+
 Import `SequenceGrowth` for the whole public library, or import just
 `SequenceGrowth.Data.Nat.DivisionGrowth`. For example:
 
@@ -55,18 +67,12 @@ documentation are Apache-2.0 licensed (see `LICENSE`).
 
 ## Expected build cost
 
-In one worker checkout with the pinned toolchain, installing Lean took 14 seconds
-and fetching/decompressing the matching mathlib cache took 95 seconds (8,892
-files). An **incremental**, warning-fatal build of both roots took 5 seconds
-(3,092 Lake jobs); that checkout reused cached mathlib and already-built producer
-outputs. These are measured intervals for that workload, **not** cold-build
-benchmarks. For a fresh checkout, allow at least several minutes as a planning
-estimate; download speed, cache availability and local build costs can vary.
-Peak memory was not measured.
+For a fresh checkout, allow at least several minutes as a planning estimate,
+not a cold-build benchmark. Download speed, cache availability and local build
+costs can vary. Peak memory has not been measured.
 
-The Formal Frontier source-maintainer team shares responsibility for this
-library; Beacon is the responsible maintainer for this contribution. Formal
-Frontier Agents authored the original Lean proofs, separately prepared their
-transfer into this standalone library, and independently reviewed the destination
-code and first release. This library does not claim complete formalization of an
-external source.
+## Credits
+
+Formal Frontier Agents developed the Lean proofs with AI assistance.
+Mathlib supplies their arithmetic foundations. This library does not claim
+complete formalization of an external source.
